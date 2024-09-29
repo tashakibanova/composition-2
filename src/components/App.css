@@ -1,0 +1,181 @@
+/* Стили для основного контейнера приложения */
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0; /* Светлый фон */
+}
+
+/* Стили для заголовка */
+.header {
+  background-color: #4CAF50; /* Зеленый фон */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Стили для навигации */
+.nav-links {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем отступы */
+  display: flex; /* Выравнивание элементов в строку */
+  justify-content: center; /* Центрирование навигационных ссылок */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Отступы между ссылками */
+}
+
+.nav-links a {
+  color: white; /* Цвет текста ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* Стили для верхнего контента */
+.top-content {
+  display: flex; /* Включаем Flexbox */
+  align-items: stretch; /* Растягиваем элементы по высоте */
+  margin-bottom: 20px;
+}
+
+/* Стили для левой колонки */
+.left-column {
+  width: 25%; /* Ширина левой колонки */
+  display: flex; /* Включаем Flexbox для левой колонки */
+  align-items: center; /* Центрируем по вертикали */
+  flex-grow: 1; /* Позволяем колонке растягиваться */
+}
+
+/* Стили для правой колонки */
+.right-column {
+  width: 75%; /* Ширина правой колонки */
+}
+
+/* Стили для строки поиска и логотипа */
+.search-container {
+  display: flex; /* Выравнивание в одну строку */
+  align-items: center; /* Центрирование по вертикали */
+  margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.logo {
+  margin-right: 10px; /* Отступ между логотипом и строкой поиска */
+  width: 100px; /* Фиксированная ширина */
+  height: 50px; /* Фиксированная высота */
+  object-fit: cover; /* Убедитесь, что изображение сохраняет пропорции */
+}
+
+/* Стили для строки поиска */
+.search-bar {
+  display: flex; /* Flexbox для выравнивания кнопки и поля ввода */
+  flex-grow: 1; /* Позволяет строке поиска занимать оставшееся пространство */
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 100%; /* Растягиваем на всю ширину */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4CAF50; /* Зеленый фон */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.search-bar button:hover {
+  background-color: #45a049; /* Более темный зеленый при наведении */
+}
+
+/* Стили для блока "Сейчас в СМИ" */
+.media-section {
+  background-color: white; /* Белый фон */
+  padding: 10px; /* Отступы внутри блока */
+  border: 1px solid #ccc; /* Серый бордер */
+  border-radius: 5px; /* Закругление углов */
+  border: 2px solid yellow; /* Желтая обводка */
+}
+
+.media-section ul {
+  list-style-type: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем отступы */
+}
+
+.media-section li {
+  margin: 5px 0; /* Отступы между элементами списка */
+}
+
+/* Стили для рекламных баннеров */
+.banner {
+  background-color: white; /* Белый фон */
+  padding: 10px; /* Отступы внутри блока */
+  border-radius: 5px; /* Закругление углов */
+  border: 2px solid yellow; /* Желтая обводка */
+  margin: 20px 0; /* Отступы сверху и снизу */
+  overflow: hidden; /* Скрывает избыточные части */
+}
+
+.banner-image {
+  height: auto; /* Поддерживаем пропорции изображения */
+}
+
+.advertisement {
+  background-color: yellow; /* Цвет фона для выделения */
+  padding: 0; /* Убираем отступы внутри баннера, если они не нужны */
+  border: 2px solid orange; /* Обводка для баннера */
+  width: 100%; /* Ширина на всю ширину родителя */
+  border-radius: 20px; /* Делаем баннер с закругленными углами */
+  display: flex; /* Включаем Flexbox для центрирования содержимого */
+  align-items: center; /* Центрируем по вертикали */
+  justify-content: center; /* Центрируем по горизонтали */
+  text-align: center; /* Центрируем текст */
+  margin-right: 20px; /* Отступ справа, если требуется */
+}
+
+.advertisement-image {
+  width: 100%; /* Растягиваем изображение на всю ширину баннера */
+  height: 100%; /* Высота изображения равна высоте баннера */
+  object-fit: cover; /* Сохраняем пропорции изображения, заполняя контейнер */
+  border-radius: 20px; /* Делаем округление для изображения, если нужно */
+}
+
+
+/* Стили для блока новостей и погоды */
+.content {
+  display: flex; /* Выравнивание в одну строку */
+}
+
+.news-list {
+  flex: 3; /* Блок новостей занимает 75% ширины */
+  margin-right: 20px; /* Отступ между новостями и погодой */
+}
+
+.news-item {
+  display: flex; /* Включаем Flexbox */
+  align-items: center; /* Выравниваем по вертикали */
+  margin-bottom: 5px;
+}
+
+.news-item img {
+  width: 50px; /* Фиксированная ширина */
+  height: 50px; /* Фиксированная высота */
+  object-fit: cover; /* Убедитесь, что изображение сохраняет пропорции */
+  margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+.weather {
+  flex: 1; /* Блок погоды занимает 25% ширины */
+  background-color: rgb(119, 217, 241); /* Белый фон */
+  padding: 10px; /* Отступы внутри блока */
+  border-radius: 5px; /* Закругление углов */
+  text-align: center;
+  border: 2px solid rgb(0, 63, 60); /* Желтая обводка */
+  margin-right: 10px;
+}
